@@ -67,6 +67,12 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
 </style>
 </head>
 <body>
@@ -93,6 +99,9 @@ input[type=submit]:hover {
           <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">School of Digital Marketing</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -108,7 +117,7 @@ input[type=submit]:hover {
   <label>Your e-mail address:
   <input type="email" name="_replyto">
 </label>
-
+<input type="file" name="attachedfile" maxlength=50 allow="text/*" >
    <label>Your message:
     <textarea name="message"></textarea>
   </label>
@@ -116,7 +125,7 @@ input[type=submit]:hover {
 </form>
    </div>
     </div>
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark" id="footer">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Phungela Online Solutions 2019</p>
     </div>
